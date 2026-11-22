@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>关于我 | 我的个人网站</title>
-  <meta name="description" content="个人介绍（占位模板，待填充内容）" />
+  <title>角色档案 | 罗罗诺亚·索隆</title>
+  <meta name="description" content="索隆的基本资料、佩刀与悬赏金变化" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body class="page-about">
@@ -12,17 +12,17 @@
   <!-- ========== 导航栏 ========== -->
   <header class="navbar">
     <div class="container nav-inner">
-      <a class="logo" href="index.html">你的<span>名字</span></a>
+      <a class="logo" href="index.html">三刀流<span>ZORO</span></a>
       <button class="nav-toggle" aria-label="切换菜单" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">首页</a></li>
-          <li><a href="about.html" class="active">关于我</a></li>
-          <li><a href="projects.html">作品项目</a></li>
-          <li><a href="blog.html">博客</a></li>
-          <li><a href="contact.html">联系我</a></li>
+          <li><a href="about.html" class="active">角色档案</a></li>
+          <li><a href="skills.html">剑道招式</a></li>
+          <li><a href="story.html">航海历程</a></li>
+          <li><a href="quotes.html">经典语录</a></li>
         </ul>
       </nav>
     </div>
@@ -31,61 +31,121 @@
   <!-- ========== 页头 ========== -->
   <section class="page-header">
     <div class="container">
-      <h1>关于我</h1>
-      <p>【一句话概括你是谁，占位文字待替换。】</p>
+      <h1>角色档案</h1>
+      <p>绿发、三刀、左耳三只水滴耳环——这是属于未来世界第一大剑豪的资料卡。</p>
     </div>
   </section>
 
-  <!-- ========== 个人简介（占位） ========== -->
+  <!-- ========== 基本资料 ========== -->
   <section class="section" style="padding-top: 0;">
     <div class="container">
-      <div class="about-grid">
-        <!-- TODO：把虚线框替换为 <img src="assets/images/你的头像.jpg" alt="头像"> -->
-        <div class="avatar-placeholder reveal">
-          头像占位<br />替换为你的照片
-        </div>
-
-        <div class="about-text glass-card reveal">
-          <!-- TODO：替换为你的个人介绍，段落可自行增减 -->
-          <p>【第一段自我介绍占位：你是谁、来自哪里、目前的身份或职业。】</p>
-          <p>【第二段介绍占位：你关注的领域、正在学习或做的事情、兴趣爱好。】</p>
-          <p>【第三段介绍占位：你相信什么、希望通过这个网站分享什么。】</p>
-
-          <!-- TODO：替换为你的技能 / 关键词标签 -->
-          <div class="tag-list">
-            <span class="tag">技能标签一</span>
-            <span class="tag">技能标签二</span>
-            <span class="tag">技能标签三</span>
-            <span class="tag">技能标签四</span>
-            <span class="tag">技能标签五</span>
+      <div class="glass-card reveal">
+        <h2 class="section-title" style="margin-bottom: 1.5rem;">基本资料</h2>
+        <dl class="profile-list">
+          <div class="profile-row">
+            <dt>全名</dt>
+            <dd>罗罗诺亚·索隆（Roronoa Zoro）</dd>
           </div>
+          <div class="profile-row">
+            <dt>身份</dt>
+            <dd>草帽海贼团剑士 / 战斗员，团内最早加入的成员，曾是"海贼猎人"</dd>
+          </div>
+          <div class="profile-row">
+            <dt>生日</dt>
+            <dd>11 月 11 日</dd>
+          </div>
+          <div class="profile-row">
+            <dt>年龄</dt>
+            <dd>两年前 19 岁 → 两年后 21 岁</dd>
+          </div>
+          <div class="profile-row">
+            <dt>身高</dt>
+            <dd>两年前 178cm → 两年后 181cm</dd>
+          </div>
+          <div class="profile-row">
+            <dt>出生地</dt>
+            <dd>东海 · 霜月村</dd>
+          </div>
+          <div class="profile-row">
+            <dt>特征</dt>
+            <dd>绿色短发、左耳三只水滴状耳环、绿色肚衣，严重路痴，嗜酒、嗜睡、训练狂</dd>
+          </div>
+          <div class="profile-row">
+            <dt>梦想</dt>
+            <dd>成为世界第一大剑豪，让名字响彻天堂（与古伊娜的约定）</dd>
+          </div>
+          <div class="profile-row">
+            <dt>师父</dt>
+            <dd>霜月村耕四郎（启蒙）；"鹰眼"乔拉可尔·米霍克（两年修炼）</dd>
+          </div>
+          <div class="profile-row">
+            <dt>当前悬赏</dt>
+            <dd>11 亿 1100 万贝里（和之国事件后）</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 悬赏金变化 ========== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <h2 class="section-title reveal">悬赏金变迁</h2>
+      <p class="section-subtitle reveal">每一次数字暴涨，都是一场震动世界的战斗。</p>
+      <div class="move-grid">
+        <div class="glass-card move-card reveal">
+          <span class="move-no">阿拉巴斯坦之后</span>
+          <h3>6000 万贝里</h3>
+          <p>击败巴洛克工作社高级特务 Mr.1 达兹·波尼斯，首次被世界政府悬赏。</p>
+        </div>
+        <div class="glass-card move-card reveal">
+          <span class="move-no">司法岛事件之后</span>
+          <h3>1 亿 2000 万贝里</h3>
+          <p> Enies Lobby 一役击败 CP9 的卡库，草帽团全员悬赏升级。</p>
+        </div>
+        <div class="glass-card move-card reveal">
+          <span class="move-no">德雷斯罗萨之后</span>
+          <h3>3 亿 2000 万贝里</h3>
+          <p>一刀流奥义劈开琵卡的巨像，力助路飞击溃多弗朗明哥的势力。</p>
+        </div>
+        <div class="glass-card move-card reveal">
+          <span class="move-no">和之国之后</span>
+          <h3>11 亿 1100 万贝里</h3>
+          <p>击败百兽海贼团三大看板之一的烬，跻身十亿级悬赏的顶级强者行列。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== 经历时间线（占位） ========== -->
+  <!-- ========== 佩刀 ========== -->
   <section class="section" style="padding-top: 0;">
     <div class="container">
-      <h2 class="section-title reveal">经历 / 里程碑</h2>
-      <p class="section-subtitle reveal">【占位：教育、工作或关键节点，可按需要增删。】</p>
-      <div class="glass-card reveal">
-        <div class="timeline">
-          <div class="timeline-item">
-            <span>时间占位（如 2026）</span>
-            <h4>事件 / 职位标题占位</h4>
-            <p>【一句话描述这件事，占位文字。】</p>
-          </div>
-          <div class="timeline-item">
-            <span>时间占位</span>
-            <h4>事件 / 职位标题占位</h4>
-            <p>【一句话描述这件事，占位文字。】</p>
-          </div>
-          <div class="timeline-item">
-            <span>时间占位</span>
-            <h4>事件 / 职位标题占位</h4>
-            <p>【一句话描述这件事，占位文字。】</p>
-          </div>
+      <h2 class="section-title reveal">佩刀名录</h2>
+      <p class="section-subtitle reveal">当前三把佩刀，另有两把曾并肩作战的名刀。</p>
+      <div class="sword-grid">
+        <div class="glass-card sword-card reveal">
+          <div class="sword-icon">🗡️</div>
+          <h3>和道一文字</h3>
+          <div class="sword-grade">大快刀二十一工之一</div>
+          <p>古伊娜的遗物，索隆从师父耕四郎处求来，承载着两人的约定，是他绝不会让其折断的刀。</p>
+        </div>
+        <div class="glass-card sword-card reveal">
+          <div class="sword-icon">🔪</div>
+          <h3>三代鬼彻</h3>
+          <div class="sword-grade">良快刀五十工之一</div>
+          <p>传说中的妖刀，索隆以手臂的运气相试将其收服，邪气凛然却始终认主。</p>
+        </div>
+        <div class="glass-card sword-card reveal">
+          <div class="sword-icon">⚔️</div>
+          <h3>阎魔</h3>
+          <div class="sword-grade">大快刀二十一工之一</div>
+          <p>和之国九里大名光月御田的遗刀，会擅自释放使用者的霸气；在替换秋水后成为索隆的新主力。</p>
+        </div>
+        <div class="glass-card sword-card reveal">
+          <div class="sword-icon">🌊</div>
+          <h3>雪走 / 秋水（旧刀）</h3>
+          <div class="sword-grade">良快刀 / 大快刀</div>
+          <p>雪走在司法岛被锈蚀损毁；黑刀秋水是斩龙武士龙马之刀，和之国后归还该国，由阎魔接替。</p>
         </div>
       </div>
     </div>
@@ -94,7 +154,7 @@
   <!-- ========== 页脚 ========== -->
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> 【你的名字】. 保留所有权利。</p>
+      <p>© <span id="year"></span> 罗罗诺亚·索隆主题站 · 粉丝同人作品，角色版权归原作者所有</p>
     </div>
   </footer>
 
