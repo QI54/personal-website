@@ -1,47 +1,44 @@
-# 我的个人网站
+# 罗罗诺亚·索隆主题站
 
-一个纯静态的多页个人网站模板，使用原生 HTML / CSS / JavaScript 编写，无需构建工具，可直接部署到 GitHub Pages。
+一个以《海贼王》角色罗罗诺亚·索隆为主题的纯静态多页网站，使用原生 HTML / CSS / JavaScript 编写，无需构建工具，可直接部署到 GitHub Pages 与 Cloudflare Pages。
 
 ## 目录结构
 
 ```
 personal-website/
-├── index.html          # 首页
-├── about.html          # 关于我
-├── projects.html       # 作品项目
-├── blog.html           # 博客
-├── contact.html        # 联系我（含占位表单）
+├── index.html          # 首页（含悬赏令海报）
+├── about.html          # 角色档案（资料、悬赏变迁、佩刀）
+├── skills.html         # 剑道招式（一刀流 / 二刀流 / 三刀流 / 九刀流）
+├── story.html          # 航海历程（名场面时间线）
+├── quotes.html         # 经典语录
 ├── .gitignore
 ├── README.md
 └── assets/
     ├── css/style.css   # 全部样式
     ├── js/main.js      # 导航、滚动动画等交互
-    └── images/         # 背景图（AI 生成）
+    └── images/         # 5 张 AI 生成主题背景
 ```
 
 ## 本地预览
 
-直接双击 `index.html` 即可在浏览器中查看；
-或在本目录启动一个本地服务：
+直接双击 `index.html` 即可；或在本目录启动本地服务：
 
 ```bash
-# 任选其一
 npx serve .
 python -m http.server 8000
 ```
 
-## 如何填充内容
+## 自定义修改
 
-1. 用编辑器（推荐 VS Code）打开本文件夹。
-2. 全局搜索 `【` 和 `TODO`，逐处替换为你的真实内容。
-3. 头像、项目封面：把图片放进 `assets/images/`，再按 HTML 注释中的提示替换占位框。
-4. 联系表单目前是前端占位，需要真正发信时可接入 [Formspree](https://formspree.io/) 等静态表单服务。
+- 主题色：改 `style.css` 顶部各 `.page-xxx` 的 `--accent` 变量。
+- 背景图：替换 `assets/images/` 下同名文件即可。
+- 悬赏令肖像：把角色图片放入 `assets/images/`，替换首页 `.wanted-photo` 占位框。
+- 文字内容：直接编辑各 HTML 文件，招式、语录、时间线均可自由增删。
 
-## 主题色与背景
+## 版权说明
 
-- 每个页面的强调色由 `style.css` 顶部的 `.page-xxx` 变量控制，改一个颜色值即可换色。
-- 背景图位于 `assets/images/`，替换同名文件即可换背景，无需改动代码。
+本站为粉丝同人作品，罗罗诺亚·索隆及《海贼王》相关角色、设定的版权归原作者及版权方所有，不用于任何商业用途。
 
 ## 部署
 
-推送到 GitHub 仓库后，在仓库 **Settings → Pages** 中选择分支和根目录即可上线，详见交付说明中的分步指引。
+推送到 GitHub 后在 **Settings → Pages** 选择分支即可；Cloudflare 则在 Pages 中连接仓库或直接上传文件夹。
