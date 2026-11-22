@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系我 | 我的个人网站</title>
+  <meta name="description" content="联系方式与留言表单（占位模板，待填充内容）" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="page-contact">
+
+  <!-- ========== 导航栏 ========== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">你的<span>名字</span></a>
+      <button class="nav-toggle" aria-label="切换菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于我</a></li>
+          <li><a href="projects.html">作品项目</a></li>
+          <li><a href="blog.html">博客</a></li>
+          <li><a href="contact.html" class="active">联系我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== 页头 ========== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>联系我</h1>
+      <p>【占位：一句话说明欢迎通过什么方式找你，比如合作、交流或提问。】</p>
+    </div>
+  </section>
+
+  <!-- ========== 联系信息 + 表单（占位） ========== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- 左侧：联系信息 -->
+        <div class="glass-card reveal">
+          <h2 style="font-size: 1.25rem; margin-bottom: 1.5rem;">联系方式</h2>
+
+          <!-- TODO：替换为你的真实信息，不需要的条目可删除 -->
+          <div class="contact-item">
+            <span>邮箱</span>
+            <strong>your-name@example.com</strong>
+          </div>
+          <div class="contact-item">
+            <span>所在城市</span>
+            <strong>【城市占位】</strong>
+          </div>
+          <div class="contact-item">
+            <span>微信 / 其他账号</span>
+            <strong>【账号占位】</strong>
+          </div>
+
+          <!-- TODO：替换为你的社交主页链接 -->
+          <div class="social-links">
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">微博</a>
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">知乎</a>
+          </div>
+        </div>
+
+        <!-- 右侧：留言表单（静态占位，接入表单服务后可用） -->
+        <div class="glass-card reveal">
+          <h2 style="font-size: 1.25rem; margin-bottom: 1.5rem;">给我留言</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">你的称呼</label>
+              <input type="text" id="name" name="name" placeholder="请输入你的名字" required />
+            </div>
+            <div class="form-group">
+              <label for="email">你的邮箱</label>
+              <input type="email" id="email" name="email" placeholder="请输入邮箱地址" required />
+            </div>
+            <div class="form-group">
+              <label for="message">留言内容</label>
+              <textarea id="message" name="message" placeholder="想说点什么……" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">发送留言</button>
+            <p class="form-note">提示：当前为静态占位表单，接入 Formspree 等服务后即可真正发送。</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> 【你的名字】. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
