@@ -3,71 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- TODO：替换为你的网站标题 -->
-  <title>首页 | 我的个人网站</title>
-  <meta name="description" content="个人网站首页（占位模板，待填充内容）" />
+  <title>罗罗诺亚·索隆 | 三刀流剑士</title>
+  <meta name="description" content="罗罗诺亚·索隆主题站：草帽海贼团剑士，立志成为世界第一大剑豪" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body class="page-home">
 
-  <!-- ========== 导航栏（各页面保持一致，仅 active 位置不同） ========== -->
+  <!-- ========== 导航栏 ========== -->
   <header class="navbar">
     <div class="container nav-inner">
-      <!-- TODO：替换为你的名字 / Logo 文案 -->
-      <a class="logo" href="index.html">你的<span>名字</span></a>
-
+      <a class="logo" href="index.html">三刀流<span>ZORO</span></a>
       <button class="nav-toggle" aria-label="切换菜单" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-
       <nav>
         <ul class="nav-links">
           <li><a href="index.html" class="active">首页</a></li>
-          <li><a href="about.html">关于我</a></li>
-          <li><a href="projects.html">作品项目</a></li>
-          <li><a href="blog.html">博客</a></li>
-          <li><a href="contact.html">联系我</a></li>
+          <li><a href="about.html">角色档案</a></li>
+          <li><a href="skills.html">剑道招式</a></li>
+          <li><a href="story.html">航海历程</a></li>
+          <li><a href="quotes.html">经典语录</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ========== 首屏 Hero（内容留空，仅占位） ========== -->
+  <!-- ========== 首屏 ========== -->
   <section class="hero">
     <div class="container hero-content">
-      <span class="hero-badge">欢迎来到我的个人主页</span>
-      <!-- TODO：替换为你的名字与身份定位 -->
-      <h1>你好，我是 <span class="accent">【你的名字】</span></h1>
-      <!-- TODO：替换为一句话介绍自己 -->
-      <p>【在这里用一句话介绍你自己：你的身份、方向、正在做的事……】</p>
+      <span class="hero-badge">草帽海贼团 · 剑士（战斗员）</span>
+      <h1>罗罗诺亚·<span class="accent">索隆</span></h1>
+      <p>三刀流剑士，草帽海贼团最早加入的成员。为了与童年挚友的约定，他要成为世界第一大剑豪，让自己的名字响彻天堂。</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="projects.html">查看我的作品</a>
-        <a class="btn btn-ghost" href="contact.html">与我联系</a>
+        <a class="btn btn-primary" href="about.html">查看角色档案</a>
+        <a class="btn btn-ghost" href="quotes.html">经典语录</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== 首页信息卡（占位） ========== -->
+  <!-- ========== 悬赏令 + 简介 ========== -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title reveal">这里可以放一个板块标题</h2>
-      <p class="section-subtitle reveal">【板块说明文字占位，介绍下面三块内容】</p>
+      <div class="about-grid">
+        <!-- 悬赏令海报 -->
+        <div class="wanted-poster reveal">
+          <div class="wanted-word">WANTED</div>
+          <div class="wanted-photo">
+            <img src="assets/images/zoro-portrait.jpg" alt="罗罗诺亚·索隆悬赏肖像" />
+          </div>
+          <div class="wanted-name">罗罗诺亚·索隆</div>
+          <div class="bounty">悬赏金 <strong>11亿1100万</strong> 贝里</div>
+        </div>
+
+        <!-- 简介 -->
+        <div class="glass-card about-text reveal">
+          <h2 class="section-title" style="margin-bottom: 1.25rem;">猎人出身的三刀流</h2>
+          <p>罗罗诺亚·索隆出生于东海的霜月村，原本是一名为了糊口而抓捕海贼的"海贼猎人"。在被路飞救下后，他成为草帽海贼团的第一名伙伴，从此踏上伟大航路。</p>
+          <p>他独创三刀流剑术——双手各持一刀、口中再衔一刀。平时刻苦修炼、嗜酒贪睡，还是个超级路痴；但在关键时刻，他永远是那个把同伴的命扛在自己身上、绝不退缩的人。</p>
+          <p>经过在克拉伊咖那岛跟随"鹰眼"米霍克的两年修炼，如今的索隆已是新世界里最顶尖的剑士之一，和之国一役后，悬赏金飙升至 11 亿 1100 万贝里。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 四大入口 ========== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <h2 class="section-title reveal">走进索隆的世界</h2>
+      <p class="section-subtitle reveal">从档案、剑术、历程到语录，四个板块完整认识这位绿发剑士。</p>
       <div class="info-grid">
-        <article class="glass-card info-card reveal">
-          <div class="icon">👤</div>
-          <h3>关于我</h3>
-          <p>【占位：个人简介摘要，点击可跳转到关于页面。】</p>
-        </article>
-        <article class="glass-card info-card reveal">
-          <div class="icon">🚀</div>
-          <h3>作品项目</h3>
-          <p>【占位：代表性项目摘要，点击可跳转到作品页面。】</p>
-        </article>
-        <article class="glass-card info-card reveal">
-          <div class="icon">✍️</div>
-          <h3>博客文章</h3>
-          <p>【占位：最新文章或写作方向摘要，点击可跳转到博客。】</p>
-        </article>
+        <a class="glass-card info-card reveal" href="about.html">
+          <div class="icon">📜</div>
+          <h3>角色档案</h3>
+          <p>生日、身高、所属团体、佩刀与悬赏金等完整资料。</p>
+        </a>
+        <a class="glass-card info-card reveal" href="skills.html">
+          <div class="icon">⚔️</div>
+          <h3>剑道招式</h3>
+          <p>一刀流、二刀流、三刀流与九刀流阿修罗的招式全录。</p>
+        </a>
+        <a class="glass-card info-card reveal" href="story.html">
+          <div class="icon">🧭</div>
+          <h3>航海历程</h3>
+          <p>从霜月村到和之国，索隆一路走来的名场面。</p>
+        </a>
+        <a class="glass-card info-card reveal" href="quotes.html">
+          <div class="icon">💬</div>
+          <h3>经典语录</h3>
+          <p>那些关于信念、承诺与剑士尊严的热血台词。</p>
+        </a>
       </div>
     </div>
   </section>
@@ -75,8 +99,7 @@
   <!-- ========== 页脚 ========== -->
   <footer class="footer">
     <div class="container">
-      <!-- TODO：替换版权名称 -->
-      <p>© <span id="year"></span> 【你的名字】. 保留所有权利。</p>
+      <p>© <span id="year"></span> 罗罗诺亚·索隆主题站 · 粉丝同人作品，角色版权归原作者所有</p>
     </div>
   </footer>
 
